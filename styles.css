@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+  --main-bg-color: #232946;
+  --main-headline-color: #fffffe;
+  --main-para-color: #b8c1ec;
+  --card-bg-color: #fffffe;
+  --card-content-color: #232946;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  padding: 0 20px;
+  background-color: var(--main-bg-color);
+}
+
+#nav {
+  padding-top: 20px;
+}
+
+#hero {
+  height: 80vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 130px;
+}
+
+#about {
+  height: 100vh;
+}
+#projects {
+  height: 100vh;
+}
+
+h1,
+h2 {
+  color: var(--main-headline-color);
+  font-family: 'Inter', sans-serif;
+}
+
+p {
+  color: var(--main-para-color);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+button {
+  border: 1px solid var(--main-para-color);
+  color: var(--main-para-color);
+  background-color: var(--main-bg-color);
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+}
+
+section {
+  padding: 0 30px;
+  background-color: var(--main-bg-color);
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+}
+
+.link {
+  color: var(--main-para-color);
+  font-family: 'Fira Code', monospace;
+}
+
+.nav-btn {
+  font-size: 14px;
+  padding: 10px 15px;
+  font-family: 'Fira Code', monospace;
+}
+
+.number {
+  color: var(--main-headline-color);
+  font-size: 12px;
+}
+
+.link-name {
+  margin-left: 2px;
+}
+
+.hero-content h1 {
+  margin-bottom: 30px;
+  font-size: 34px;
+}
+
+.tagline {
+  font-family: 'Fira Code', monospace;
+  margin-bottom: 20px;
+}
+
+.main-btn {
+  margin-top: 50px;
+  padding: 18px 50px;
+}
+
+.about-content h2 {
+  margin-bottom: 30px;
+}
+
+.about-content p:last-of-type {
+  margin-top: 30px;
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  width: fit-content;
+}
+
+.tech-title {
+  color: var(--card-content-color);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Media Queries */
+@media (min-width: 780px) {
+  #app {
+    padding: 0 40px;
+  }
+}
