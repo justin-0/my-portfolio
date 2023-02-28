@@ -13,151 +13,109 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
 }
 
-#app {
-  padding: 0 20px;
-  background-color: var(--main-bg-color);
-}
-
-#nav {
-  padding-top: 20px;
-}
-
-#hero {
-  height: 80vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 130px;
-}
-
-#about {
-  height: 100vh;
-}
-#projects {
-  height: 100vh;
+/* Fonts, Colours, Button, Anchors */
+.link span,
+.tagline,
+.tech-title {
+  font-family: 'Fira Code', monospace;
 }
 
 h1,
-h2 {
+.link .number,
+.h-number {
   color: var(--main-headline-color);
-  font-family: 'Inter', sans-serif;
 }
 
-h2 {
-  font-family: 'Fira Code', monospace;
+.link span,
+.tagline,
+.tech-title,
+p,
+button {
   color: var(--main-para-color);
-  font-size: 24px;
 }
 
 p {
-  color: var(--main-para-color);
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
   line-height: 25px;
+  font-size: 16px;
 }
 
 button {
-  border: 1px solid var(--main-para-color);
-  color: var(--main-para-color);
   background-color: var(--main-bg-color);
+  border: 1px solid var(--main-para-color);
   border-radius: 4px;
-  font-family: 'Fira Code', monospace;
+  /* font-family: 'Inter', sans-serif; */
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 section {
-  padding: 0 30px;
-  background-color: var(--main-bg-color);
+  margin: 0 20px;
+}
+
+/* Navigation */
+#nav {
+  padding-top: 20px;
 }
 
 .links {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
-  font-size: 10px;
+  gap: 8px;
 }
 
 .link {
-  color: var(--main-para-color);
-  font-family: 'Fira Code', monospace;
+  font-size: 14px;
 }
 
 .nav-btn {
-  font-size: 12px;
-  padding: 5px 8px;
-  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  padding: 4px 8px;
+  cursor: pointer;
 }
 
-.number {
-  color: var(--main-headline-color);
-  font-size: 10px;
+/* Parent Div */
+#app {
+  background-color: var(--main-bg-color);
+  padding: 0 25px;
+}
+/* Hero Section */
+#hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.link-name {
-  margin-left: 2px;
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.hero-content h1 {
-  margin-bottom: 30px;
-  font-size: 34px;
-}
-
-.tagline {
-  font-family: 'Fira Code', monospace;
-  margin-bottom: 20px;
+.hero-content .tagline,
+h1,
+p {
+  margin-bottom: 15px;
 }
 
 .main-btn {
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+/* About Section */
+.abt-parent {
+  margin-top: 100px;
+}
+
+.about-content .tagline {
   margin-top: 50px;
-  padding: 18px 35px;
-}
-
-.about-content h2 {
-  margin-bottom: 30px;
-}
-
-.h-number {
-  font-size: 20px;
-  color: var(--main-headline-color);
-}
-
-.about-content p:last-of-type {
-  margin-top: 30px;
-}
-
-.card {
-  background-color: var(--card-bg-color);
-  width: fit-content;
-}
-
-.tech-title {
-  color: var(--card-content-color);
-  font-family: 'Inter', sans-serif;
-}
-
-/* Media Queries */
-@media (min-width: 500px) {
-  .links {
-    justify-content: flex-end;
-  }
-}
-@media (min-width: 780px) {
-  #app {
-    padding: 0 80px;
-  }
-  #nav {
-    padding-top: 30px;
-  }
-  #hero,
-  #about,
-  #projects {
-    padding: 0 250px;
-    margin: 0 auto;
-  }
-  .links {
-    gap: 30px;
-  }
 }

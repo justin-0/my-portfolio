@@ -12,16 +12,26 @@
       <nav id="nav">
         <div class="links">
           <div class="link">
-            <span class="number">01.</span><span class="link-name">About</span>
+            <a href="#about"
+              ><span class="number">01.</span
+              ><span class="link-name">About</span></a
+            >
           </div>
           <div class="link">
-            <span class="number">02.</span><span class="link-name">Work</span>
+            <a href="#projects"
+              ><span class="number">02.</span
+              ><span class="link-name">Work</span></a
+            >
           </div>
           <div class="link">
-            <span class="number">03.</span
-            ><span class="link-name">Contact</span>
+            <a href=""
+              ><span class="number">03.</span
+              ><span class="link-name">Contact</span></a
+            >
           </div>
-          <div class="link"><button class="nav-btn">Resume</button></div>
+          <div class="link">
+            <a href=""><button class="nav-btn">Resume</button></a>
+          </div>
         </div>
       </nav>
       <section id="hero">
@@ -35,13 +45,13 @@
             I'm a passionate frontend developer, turning ideas into outstanding
             digital experiences.
           </p>
-          <button class="main-btn">See my work!</button>
+          <a href="#projects"><button class="main-btn">See my work!</button></a>
         </div>
       </section>
-      <section>
+      <section class="abt-parent">
         <div id="about">
           <div class="about-content">
-            <h2><span class="h-number">01. </span>About Me</h2>
+            <h3 class="tagline"><span class="h-number">01. </span>About Me</h3>
             <p>
               Welcome to my portfolio site! I'm a frontend web developer with a
               passion for creating an exceptional digital experience. I'm
@@ -81,7 +91,9 @@
         </div>
       </section>
       <section id="projects">
-        <h2><span class="h-number">02. </span>Some Things I've Built</h2>
+        <h3 class="tagline">
+          <span class="h-number">02. </span>Some Things I've Built
+        </h3>
       </section>
     </div>
     <script src="/app.js"></script>
