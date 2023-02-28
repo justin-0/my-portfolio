@@ -46,6 +46,12 @@ h2 {
   font-family: 'Inter', sans-serif;
 }
 
+h2 {
+  font-family: 'Fira Code', monospace;
+  color: var(--main-para-color);
+  font-size: 24px;
+}
+
 p {
   color: var(--main-para-color);
   font-family: 'Inter', sans-serif;
@@ -68,10 +74,10 @@ section {
 
 .links {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 12px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .link {
@@ -81,13 +87,13 @@ section {
 
 .nav-btn {
   font-size: 14px;
-  padding: 10px 15px;
+  padding: 8px 10px;
   font-family: 'Fira Code', monospace;
 }
 
 .number {
   color: var(--main-headline-color);
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .link-name {
@@ -106,11 +112,16 @@ section {
 
 .main-btn {
   margin-top: 50px;
-  padding: 18px 50px;
+  padding: 18px 35px;
 }
 
 .about-content h2 {
   margin-bottom: 30px;
+}
+
+.h-number {
+  font-size: 20px;
+  color: var(--main-headline-color);
 }
 
 .about-content p:last-of-type {
@@ -128,6 +139,11 @@ section {
 }
 
 /* Media Queries */
+@media (min-width: 500px) {
+  .links {
+    justify-content: flex-end;
+  }
+}
 @media (min-width: 780px) {
   #app {
     padding: 0 40px;
