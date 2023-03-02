@@ -113,7 +113,7 @@ p {
 
 /* About Section */
 .abt-parent {
-  margin-top: 100px;
+  padding: 100px 0;
 }
 
 .about-content .tagline {
