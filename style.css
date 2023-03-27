@@ -18,10 +18,18 @@ a {
   color: #ffffff;
 }
 
+button {
+  background-color: #ffffff;
+  border: 2px solid var(--black-bg);
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-family: "Clash Display", sans-serif;
+}
+
 /* Navigation */
 
 .nav {
-  height: 50px;
+  height: 75px;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -43,8 +51,11 @@ a {
   font-weight: 500;
 }
 
+.nav__mobile-toggle {
+}
+
 .nav__mobile-menu {
-  height: calc(100vh - 50px);
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,6 +79,60 @@ a {
 
 .hide {
   display: none;
+}
+
+/* Hero */
+
+.hero {
+  height: calc(80vh - 75px);
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue-bg);
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.hero__content h1 {
+  font-size: 1.25rem;
+  margin-bottom: 1.75rem;
+  font-weight: 600;
+}
+
+.hero__content h3 {
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+.hero__content-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__content-buttons button {
+  transition: all 0.8s;
+  font-weight: 600;
+}
+
+.hero__content-buttons button:hover {
+  color: #ffffff;
+  background-color: var(--black-bg);
+}
+
+.divider {
+  height: calc(20vh);
+  background-color: var(--blue-bg);
 }
 
 /* Media Queries */
