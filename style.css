@@ -1,0 +1,118 @@
+:root {
+  --blue-bg: #ecf5ff;
+  --black-bg: #202020;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Clash Display", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Navigation */
+
+.nav {
+  height: 50px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #ffffff;
+  background-color: var(--black-bg);
+}
+
+.nav__logo {
+  font-weight: 600;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+}
+
+.nav__mobile-menu {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 75%;
+  color: #ffffff;
+  background-color: var(--black-bg);
+  font-weight: 500;
+}
+
+.nav__mobile__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .nav__mobile-toggle {
+    display: none;
+  }
+}
+
+/* Mobile Menu Animation */
+
+.slide-in-right {
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -4,98 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Justin O'Connell | Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Import -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@400,700,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Justin O'Connell | Frontend Developer</title>
   </head>
   <body>
-    <div id="app">
-      <nav id="nav">
-        <div class="links">
-          <div class="link">
-            <a href="#about"
-              ><span class="number">01.</span
-              ><span class="link-name">About</span></a
-            >
-          </div>
-          <div class="link">
-            <a href="#projects"
-              ><span class="number">02.</span
-              ><span class="link-name">Work</span></a
-            >
-          </div>
-          <div class="link">
-            <a href=""
-              ><span class="number">03.</span
-              ><span class="link-name">Contact</span></a
-            >
-          </div>
-          <div class="link">
-            <a href=""><button class="nav-btn">Resume</button></a>
-          </div>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+      <div class="nav__logo"><span>justin</span></div>
+      <div class="nav__links">
+        <div class="nav__link"><a href="#home">Home</a></div>
+        <div class="nav__link"><a href="#about">About</a></div>
+        <div class="nav__link"><a href="#work">Work</a></div>
+        <div class="nav__link"><a href="#contact">Contact</a></div>
+      </div>
+      <div class="nav__mobile-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="nav__mobile-menu hide">
+        <div class="nav__mobile__links">
+          <div class="nav__mobile__link"><a href="#home">Home</a></div>
+          <div class="nav__mobile__link"><a href="#about">About</a></div>
+          <div class="nav__mobile__link"><a href="#work">Work</a></div>
+          <div class="nav__mobile__link"><a href="#contact">Contact</a></div>
         </div>
-      </nav>
-      <section id="hero">
-        <div class="hero-content">
-          <p class="tagline">Hi, my name is</p>
-          <h1>
-            Justin O'Connell.<br />
-            I love to build things for the web.
-          </h1>
-          <p>
-            I'm a passionate frontend developer, turning ideas into outstanding
-            digital experiences.
-          </p>
-          <a href="#projects"><button class="main-btn">See my work!</button></a>
-        </div>
-      </section>
-      <section class="abt-parent">
-        <div id="about">
-          <div class="about-content">
-            <h3 class="tagline"><span class="h-number">01. </span>About Me</h3>
-            <p>
-              Welcome to my portfolio site! I'm a frontend web developer with a
-              passion for creating an exceptional digital experience. I'm
-              constantly exploring new tools and frameworks to expand my
-              skillset. With a keen eye for design and attention to detail, I
-              approach every project with a focus on crafting beautiful and
-              functional user interfaces.
-            </p>
-            <p>
-              I enjoy collaborating with clients and fellow developers to create
-              engaging web applications that meet your needs and exceed the
-              users expectations. Browse my portfolio to see examples of my work
-              and let's connect to bring your ideas to life on the web!
-            </p>
-          </div>
-          <div class="tech">
-            <div class="card">
-              <div class="logo"></div>
-              <h4 class="tech-title">HTML</h4>
-            </div>
+      </div>
+    </nav>
 
-            <div class="card">
-              <div class="logo"></div>
-              <h4 class="tech-title">CSS</h4>
-            </div>
-
-            <div class="card">
-              <div class="logo"></div>
-              <h4 class="tech-title">JavaScript (ES6+)</h4>
-            </div>
-
-            <div class="card">
-              <div class="logo"></div>
-              <h4 class="tech-title">React</h4>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="projects">
-        <h3 class="tagline">
-          <span class="h-number">02. </span>Some Things I've Built
-        </h3>
-      </section>
-    </div>
-    <script src="/app.js"></script>
+    <!-- HERO -->
+    <script src="app.js"></script>
   </body>
 </html>
