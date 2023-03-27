@@ -22,7 +22,7 @@ button {
   background-color: #ffffff;
   border: 2px solid var(--black-bg);
   border-radius: 1rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   font-family: "Clash Display", sans-serif;
 }
 
@@ -30,7 +30,7 @@ button {
 
 .nav {
   height: 75px;
-  padding: 1rem;
+  padding: 1rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,8 +85,8 @@ button {
 
 .hero {
   height: calc(80vh - 75px);
+  padding: 0 2rem;
   width: 100%;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,9 +114,10 @@ button {
 }
 
 .hero__content-buttons {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 2rem;
 }
 
