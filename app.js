@@ -18,5 +18,9 @@ menuToggle.addEventListener("click", () => {
 })
 
 mobileLinks.forEach((link) =>
-  link.addEventListener("click", () => document.body.removeAttribute("style")),
+  link.addEventListener("click", () => {
+    document.body.removeAttribute("style")
+    mobileMenu.classList.add("hide")
+    menuToggle.firstElementChild.classList.remove(`fa-xmark`)
+  }),
 )
