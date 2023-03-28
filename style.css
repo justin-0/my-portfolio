@@ -12,6 +12,7 @@
 
 body {
   font-family: "Clash Display", sans-serif;
+  background-color: var(--blue-bg);
 }
 
 a {
@@ -145,6 +146,7 @@ section {
 
 .about {
   padding: 0 1rem;
+  margin-bottom: 6.5rem;
 }
 
 .about__text p {
@@ -154,7 +156,6 @@ section {
 .about__text-pd {
   padding: 0.75rem 0;
 }
-
 .about__skills li {
   list-style: none;
   padding: 0.4rem 0;
@@ -162,6 +163,40 @@ section {
 
 .about__skills i {
   padding-right: 0.5rem;
+}
+
+.work {
+  padding: 0 1rem;
+}
+
+.work__collection {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.work__card {
+  border: 2px dashed red;
+  width: 80%;
+}
+
+.work__card-img img {
+  width: 100%;
+  object-fit: contain;
+  opacity: 0.4;
+}
+
+.work__card-img img:hover {
+  width: 100%;
+  object-fit: contain;
+  opacity: 1;
+}
+
+.work__card-desc {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Media Queries */
