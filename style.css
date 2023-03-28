@@ -180,12 +180,15 @@ section {
 .work__card {
   border: 2px dashed red;
   width: 80%;
+  color: #ffffff;
+  background-color: var(--black-bg);
+  padding-bottom: 1rem;
 }
 
 .work__card-img img {
   width: 100%;
   object-fit: contain;
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 .work__card-img img:hover {
@@ -197,6 +200,22 @@ section {
 .work__card-desc {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+.work__card-tech {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.work__card-links {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.fa-square-github {
+  font-size: 1.2rem;
 }
 
 /* Media Queries */
