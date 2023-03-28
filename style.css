@@ -130,6 +130,7 @@ section {
 .hero__content-buttons button {
   transition: all 0.8s;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .hero__content-buttons button:hover {
@@ -140,6 +141,27 @@ section {
 .divider {
   height: calc(20vh);
   background-color: var(--blue-bg);
+}
+
+.about {
+  padding: 0 1rem;
+}
+
+.about__text p {
+  line-height: 1.5rem;
+}
+
+.about__text-pd {
+  padding: 0.75rem 0;
+}
+
+.about__skills li {
+  list-style: none;
+  padding: 0.4rem 0;
+}
+
+.about__skills i {
+  padding-right: 0.5rem;
 }
 
 /* Media Queries */
