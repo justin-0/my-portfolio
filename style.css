@@ -132,6 +132,7 @@ section {
   transition: all 0.8s;
   font-weight: 600;
   cursor: pointer;
+  color: var(--black-bg);
 }
 
 .hero__content-buttons button:hover {
