@@ -220,6 +220,9 @@ section {
 .fa-square-github {
   font-size: 1.2rem;
 }
+.fa-arrow-up-right-from-square {
+  font-size: 1.1rem;
+}
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
