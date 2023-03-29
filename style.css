@@ -157,13 +157,27 @@ section {
 .about__text-pd {
   padding: 0.75rem 0;
 }
+
+.about__skills {
+  margin-top: 0.8rem;
+}
+
+.about__skills ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+
 .about__skills li {
   list-style: none;
-  padding: 0.4rem 0;
+  /* padding: 0.4rem 0; */
 }
 
 .about__skills i {
-  padding-right: 0.5rem;
+  padding-right: 0.35rem;
 }
 
 .work {
