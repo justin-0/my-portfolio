@@ -178,11 +178,13 @@ section {
 }
 
 .work__card {
-  border: 2px dashed red;
+  /* border: 2px dashed red; */
   width: 80%;
   color: #ffffff;
   background-color: var(--black-bg);
   padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .work__card-img img {
@@ -217,7 +219,6 @@ section {
 .fa-square-github {
   font-size: 1.2rem;
 }
-
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
