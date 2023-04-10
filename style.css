@@ -32,6 +32,21 @@ section {
   background-color: var(--blue-bg);
 }
 
+label {
+  font-weight: 500;
+}
+
+textarea {
+  margin-top: 1rem;
+  font-family: "Clash Display", sans-serif;
+}
+
+input {
+  margin-left: 0.6rem;
+  border-radius: 0.2rem;
+  padding: 0.3rem 0.5rem;
+}
+
 /* Navigation */
 
 .nav {
@@ -182,6 +197,7 @@ section {
 
 .work {
   padding: 0 1rem;
+  margin-bottom: 6.5rem;
 }
 
 .work__collection {
@@ -237,6 +253,41 @@ section {
 .fa-arrow-up-right-from-square {
   font-size: 1.1rem;
 }
+
+/* Contact */
+#contact {
+  padding: 0 1rem;
+}
+
+.contact__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact__form-fields {
+  margin: 1rem 0;
+}
+
+.msg {
+  display: block;
+}
+
+form button {
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+}
+
+/* Footer */
+footer {
+  font-size: 0.75rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
