@@ -39,6 +39,7 @@ label {
 textarea {
   margin-top: 1rem;
   font-family: "Clash Display", sans-serif;
+  padding: 0.5rem;
 }
 
 input {
@@ -275,10 +276,18 @@ input {
   display: block;
 }
 
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 form button {
   border-radius: 4px;
   padding: 0.2rem 0.5rem;
   color: black;
+  cursor: pointer;
 }
 
 /* Footer */
@@ -301,6 +310,55 @@ footer {
 @media screen and (min-width: 769px) {
   .nav__mobile-toggle {
     display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .nav {
+    padding: 2rem 6rem;
+  }
+  .hero {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .hero h3 {
+    width: 80%;
+  }
+  .hero__content-buttons {
+    width: 80%;
+    justify-content: flex-start;
+  }
+  .about {
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  .work {
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  .work__card {
+    width: 375px;
+  }
+  #contact {
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  form {
+    width: 600px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  input {
+    width: 300px;
+  }
+  textarea {
+    width: 500px;
+  }
+  form button {
+    padding: 0.6rem 1.2rem;
   }
 }
 
