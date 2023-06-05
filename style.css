@@ -391,6 +391,9 @@ footer {
     margin: 0 auto;
     margin-bottom: 6rem;
   }
+  .work__collection {
+    flex-direction: row;
+  }
   .work__card {
     width: 450px;
   }
